@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>REGISTRARSE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(#141e30, #243b55);
+    }
+
+    /* Estilos para quitar el color del formulario */
+
+    .formulario {
+      color: black;
+      background-color: white;
+      border: none;
+    }
+
+    .formulario input {
+      color: black;
+      background-color: lightblue;
+      border: none;
+    }
+
+    .formulario label {
+      color: black;
+    }
+
+    .formulario a {
+      color: black;
+    }
+
+    /* Estilos para centrar el formulario */
+
+    .formulario {
+      margin: 0 auto;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Estilos para centrar el texto */
+
+    .texto-centrado {
+      text-align: center;
+    }
+
+    /* Estilos para colocar las casillas debajo del texto */
+
+    .casilla-con-texto {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .casilla-con-texto input {
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+<body>
+
+<form action="login.html" class="formulario">
+  <h1 class="texto-centrado"> REGISTRARSE </h1>
+  <label class="texto-centrado"> DOCUMENTO DE IDENTITAD </label>
+  <input type="number" min="1" max="129999999999" required><br>
+  <br>
+  <div class="casilla-con-texto">
+    <label class="texto-centrado"> NOMBRE </label>
+    <input type="text" required><br>
+  </div>
+  <br>
+  <div class="casilla-con-texto">
+    <label class="texto-centrado">> FECHA DE NACIMIENTO</label>
+    <input type="date" required><br>
+  </div>
+  <br>
+  <div class="casilla-con-texto">
+    <label class="texto-centrado">CONTRASEÑA</label>
+    <input type="Pasword" required><br><br>
+  </div>
+  <input type="radio" name="genero" cheked> Femenino<br>
+  <input type="radio"name="genero" cheked> Masculino<br>
+  <input type="radio"name="genero" cheked>Otro<br>
+  <input type="submit" name="ingresar"><br>
+  <br>
+  <a href="index.html" id="abc" class="texto-centrado">Regresar</a>
+  <br>
+</form>
+
+</body>
+</html>
+
+
+
+
